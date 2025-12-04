@@ -1,0 +1,36 @@
+
+/* Industrial Instrumentation Site Styles */
+:root{
+  --bg:#0f172a; --panel:#111827; --muted:#9ca3af; --text:#e5e7eb; --accent:#60a5fa; --accent2:#34d399;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial;
+  background:radial-gradient(1200px 600px at 12% 8%, #0b1227 10%, var(--bg) 60%);
+  color:var(--text);
+}
+.header{
+  display:flex; align-items:center; gap:1rem; padding:1rem 1.25rem; border-bottom:1px solid rgba(255,255,255,0.06);
+  position:sticky; top:0; backdrop-filter:blur(6px); background:rgba(17,24,39,0.55);
+}
+.logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#a78bfa,var(--accent2)); box-shadow:0 8px 30px rgba(96,165,250,0.35)}
+.site-title{margin:0; font-size:1.25rem}
+nav a{color:var(--text); text-decoration:none; margin-right:1rem; padding:0.4rem 0.6rem; border-radius:8px}
+nav a:hover{background:rgba(255,255,255,0.06)}
+.container{max-width:1000px;margin:0 auto; padding:1.25rem}
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:1rem; box-shadow:0 10px 30px rgba(0,0,0,0.35)
+}
+.grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1rem}
+.badge{display:inline-flex; align-items:center; gap:.4rem; padding:.35rem .6rem; border:1px solid rgba(96,165,250,.4); color:#e8f0ff; background:rgba(96,165,250,.12); border-radius:999px; font-weight:600}
+.section-title{margin:.2rem 0 .6rem 0}
+.summary{color:var(--muted); line-height:1.6}
+footer{margin:2rem 0; color:var(--muted); text-align:center}
+.table{width:100%; border-collapse:collapse; margin-top:.5rem}
+.table th,.table td{border:1px solid rgba(255,255,255,0.12); padding:.5rem; text-align:left}
+.callout{border-left:4px solid var(--accent); padding:.75rem; background:rgba(255,255,255,0.05); border-radius:8px}
+.cta{display:inline-block; margin-top:.6rem; padding:.5rem .8rem; border-radius:10px; background:rgba(52,211,153,0.18); color:#d1fae5; border:1px solid rgba(52,211,153,0.45); text-decoration:none; font-weight:600}
+.cta:hover{transform:translateY(-1px); box-shadow:0 8px 20px rgba(52,211,153,0.25)}
